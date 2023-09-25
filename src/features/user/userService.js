@@ -1,5 +1,5 @@
 import { get, post } from "../request";
-const BASE_URL = "http://localhost:4000/api/user";
+const BASE_URL = "https://mern-social-media-6y61.onrender.com/api/user";
 
 const getUser = () => get(`${BASE_URL}/profile`);
 const follow = (id) => post(`${BASE_URL}/follow/${id}`);
