@@ -1,5 +1,5 @@
 import { del, get, post, put } from "../request";
-const BASE_URL = "http://localhost:4000/api/post";
+const BASE_URL = "https://mern-social-media-6y61.onrender.com/api/post";
 
 const getFollowingPosts = () => get(`${BASE_URL}/followings`);
 const createPost = (data) => post(`${BASE_URL}/create`, data);
