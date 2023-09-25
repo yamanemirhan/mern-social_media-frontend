@@ -1,5 +1,5 @@
 import { del, post } from "../request";
-const BASE_URL = "http://localhost:4000/api/comment";
+const BASE_URL = "https://mern-social-media-6y61.onrender.com/api/comment";
 
 const addComment = (data, id) =>
   post(`${BASE_URL}/${id}`, data, "application/json");
