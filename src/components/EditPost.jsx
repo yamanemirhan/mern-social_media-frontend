@@ -81,7 +81,7 @@ function EditPost({ post, setShowEditPost, setCurrentImageIndex }) {
   };
 
   return (
-    <div className="py-2">
+    <div className="py-2 fixed inset-0 flex flex-col mx-auto items-center justify-center z-50 p-10 bg-black bg-opacity-90 min-h-screen">
       <h2 className="text-2xl text-center">Update Post</h2>
       <GiCancel
         onClick={handleCloseButton}
@@ -120,7 +120,7 @@ function EditPost({ post, setShowEditPost, setCurrentImageIndex }) {
               <img
                 src={URL.createObjectURL(image)}
                 alt="selected"
-                className="w-[584px] h-[384px] object-cover"
+                className="w-[292px] h-[192px] object-cover"
               />
               <GiCancel
                 onClick={() => handleImageRemove(index)}

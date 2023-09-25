@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div className="max-w-[1200px] mx-auto py-5">
-      <StoriesSlider />
+      {/* <StoriesSlider /> */}
       <div className="p-1">
         <h2 className="mt-8 mb-4 text-2xl">Feeds</h2>
         <Posts posts={posts} />

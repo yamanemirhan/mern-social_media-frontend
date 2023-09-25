@@ -178,7 +178,9 @@ function Profile() {
         )}
         <p className="text-2xl text-center my-2">{profile?.name}</p>
         <div className="flex items-center gap-2 justify-center">
-          {profile?.private && user?._id !== id ? (
+          {profile?.private &&
+          user?._id !== id &&
+          !profile?.followings?.includes(user?._id) ? (
             <>
               <p>{profile?.followersCount} followers</p>
               <p>{profile?.followingsCount} followings</p>
